@@ -1,0 +1,112 @@
+/* For the whole Container with background image */
+.container {
+    background: url("img.jpg") ;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-left: 10%;
+    display: block;
+    width: 180px;
+    height: 240px;
+}
+
+/* For none display */
+.d-none {
+    display: none;
+}
+
+.main {
+    animation-name: bigger;
+    animation-duration: 0.5s;
+    animation-iteration-count: inherit;
+    animation-fill-mode: forwards;
+    
+}
+
+/* To stretch image */
+@keyframes bigger {
+    from {
+        width: 180px;
+        height: 240px;
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 1;
+        width: 200px;
+        height: 300px;
+    }
+}
+
+.new {
+    animation-name: new;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: inherit;
+
+}
+
+/* To shrink image */
+@keyframes new {
+    from {
+        width: 200px;
+        height: 300px;
+    }
+
+    to {
+        width: 180px;
+        height: 240px;
+    }
+}
+
+/* To show text */
+.show {
+    font-weight: bolder;
+    position: relative;
+    display: inherit;
+    margin-bottom: 50px;
+    animation-name: show;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: inherit;
+}
+
+
+/* For animation to be shown */
+@keyframes show {
+    from {
+        margin-left: 1px;
+        opacity: 0.3;
+    }
+
+    to {
+        margin-left: 17%;
+        opacity: 1;
+    }
+}
+
+/* For social media icons */
+.s-s {
+    position: relative;
+    display: inline;
+    animation-name: show-img;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: inherit;
+    margin-top: -30px;
+    margin-left: 160px;
+}
+
+/* Animation For Icons to be shown */
+@keyframes show-img {
+    from {
+        margin-left: 160px;
+        opacity: 0.3;
+    }
+
+    to {
+        margin-left: 150px;
+        opacity: 1;
+    }
+}
